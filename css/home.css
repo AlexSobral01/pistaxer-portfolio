@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Nav-Bar */
+
+.nav_bar {
+  padding: 0px 15px;
+}
+
+.logo_container {
+  padding: 20px 0px;
+}
+
+.page_map_container {
+  display: flex;
+  list-style: none;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.page_map_container > li > a {
+  text-decoration: none;
+  gap: 10px;
+  color: gray;
+  transition: 0.3s;
+}
+
+.page_map_container > li > a:hover {
+  color: rgb(87, 87, 87);
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_media_icons {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  align-items: center;
+}
+
+.x_icon > img {
+  height: 15px;
+  cursor: pointer;
+}
+
+.whatzapp_icon > img {
+  height: 16px;
+  cursor: pointer;
+}
+
+
+/* Main */
+
+main {
+  margin: 50px 20%;
+}
+
+.about_me_section > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30% 0px;
+}
+
+.about_me_section > header > div > h1 {
+  padding-bottom: 20px;
+  margin-top: -40px;
+  text-align: center;
+}
+
+.about_me_section > header > div > p {
+  text-align: justify;
+  color: gray;
+  ;
+}
+
+.about_me_section > header > figure > img {
+  border-radius: 10px;
+  margin-left: 90px;
+}
+
+.drawings_section {
+  margin: 80px 0px;
+}
+
+.drawings_section > div > h2 {
+  margin: 50px 0px;
+}
+
+.drawings_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table_prices_container {
+  background-color: rgb(242, 241, 241);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 200px 0px;
+}
+
+.table_prices_container > h2 {
+  padding: 20px 0px;
+}
+
+.prices_table_withoutLineart, .prices_table_withLineart {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.prices_table_withoutLineart th, .prices_table_withLineart th {
+  background-color: #e5e3e3;
+  border: 1px solid rgb(171, 170, 170);
+  padding: 8px;
+  text-align: left;
+}
+
+.prices_table_withoutLineart td, .prices_table_withLineart td {
+  border: 1px solid rgb(171, 170, 170);
+  background-color: #ffffff;
+  padding: 8px;
+  text-align: left;
+}
+
+.prices_table_withoutLineart th:first-child, .prices_table_withLineart th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.prices_table_withoutLineart th:last-child, .prices_table_withLineart th:last-child {
+  border-top-right-radius: 5px;
+}
+
+.prices_table_withoutLineart td:first-child, .prices_table_withLineart td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.prices_table_withoutLineart td:last-child, .prices_table_withLineart td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+.table_prices_section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.table_prices_container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  padding: 30px 100px;
+  background-color: rgb(41, 41, 42);
+}
+
+footer > div > h4 {
+  margin: 10px 0px;
+  color: white;
+}
+
+footer > div > p {
+  margin: 10px 5px;
+  color: rgb(170, 170, 170);
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 20px 5%;
+  }
+
+  .about_me_section > header {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .about_me_section > header > figure > img {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+
+  .about_me_section > header > div > h1 {
+    margin-top: 0px;
+  }
+
+  .drawings_section > div > h2 {
+    margin: 0px;
+  }
+
+  .drawings_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drawing {
+    margin: 50px 0px; 
+  }
+}
